@@ -91,51 +91,56 @@
 
 </head>
 
-<body>
+<body >
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Thirteenth navbar example">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    {{-- <div class="p-3 mb-2 bg-primary"> --}}
+    <nav class="navbar navbar-expand-lg  bg-black" aria-label="Thirteenth navbar example">
+        <div class="container-fluid bg-black">
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
           </button>
 
           <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
-            <img src={{asset('image/cricket-sport-icon.svg')}} style="width:100px;height:40px;">
-            <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+            <img src={{asset('image/logo8.jpg')}} style="width:100px;height:25%">
+            <ul class="navbar-nav col-lg-12 justify-content-lg-center">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active text-white" aria-current="page" href="#"><strong>Home</strong></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#"></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page">Live Score</a>
+                <a class="nav-link active text-white" aria-current="page"><strong>Live Score</strong></a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Teams</a>
+                <a class="nav-link active dropdown-toggle text-white " href="#" data-bs-toggle="dropdown" aria-expanded="false"><strong>Teams</strong></a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">India</a></li>
-                  <li><a class="dropdown-item" href="#">Australia</a></li>
-                  <li><a class="dropdown-item" href="#">South Africa</a></li>
-                  <li><a class="dropdown-item" href="#">Pakistan</a></li>
-                  <li><a class="dropdown-item" href="#">New Zealand</a></li>
-
+                  <li><a class="dropdown-item" href="#"><strong>India</strong></a></li>
+                  <li><a class="dropdown-item" href="#"><strong>Australia</strong></a></li>
+                  <li><a class="dropdown-item" href="#"><strong>South Africa</strong></a></li>
+                  <li><a class="dropdown-item" href="#"><strong>Pakistan</strong></a></li>
+                  <li><a class="dropdown-item" href="#"><strong>New Zealand</strong></a></li>
 
                 </ul>
               </li>
             </ul>
+
+
+          </div>
+
+          <div class="d-flex" >
+
+            <label class="text-white " style="margin-right: 5px; margin-top:8px;"><strong>Search</strong></label>
+            <input type="email" class="form-control border-dark " id="exampleFormControlInput1" >
+          </div>
+
             <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-              <img src="{{asset('image/ballgif.gif')}}" style="width:100px;height:70px;">
+              <img src="{{asset('image/logo4.jpg')}}" style="width:30% ;height:80px;">
             </div>
           </div>
-        </div>
-    </nav>
-<!--
 
-       <img src="{{ asset('image/cricfun.png') }}" style="width:100px;height:40px;">
-       <a class="navbar-brand" href="/"><img src="{{ asset('image/XYiv.gif') }}" alt='home-logo' class='logo' height="100px" width="100px" style="margin-left: 50px" /></a>
-       <img src="{{ asset('image/cupcelebratehead.gif') }}" style="width:310px;margin-right:200px;
--->
+    </nav>
+
 {{-- navbar --}}
 
 <div class="col-12">
@@ -148,9 +153,9 @@
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="{{asset('image/teamindmodal.jpg')}}" class="carouselphoto">
+        <div class="carousel-inner ">
+          <div class="carousel-item active" >
+            <img src="{{asset('image/GEaMBS2bEAEWBRI.jpg')}}" class="carouselphoto">
             <div class="container">
               <div class="carousel-caption text-start">
 
@@ -160,7 +165,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="{{asset('image/teamnzmodal.webp')}}" class="carouselphoto">
+            <img src="{{asset('image/GEaMBS3bsAANFxr.jpg')}}"  class="carouselphoto">
             <div class="container">
               <div class="carousel-caption">
 
@@ -168,7 +173,7 @@
             </div>
           </div>
           <div class="carousel-item">
-          <img src="{{asset('image/teamsusmodal.jpg')}}" class="carouselphoto" >
+          <img src="{{asset('image/GEaMBS4bAAAnM-Q.jpg')}}" class="carouselphoto" >
             <div class="container">
               <div class="carousel-caption text-end">
 
@@ -195,7 +200,7 @@
 <div class=" d-flex justify-content-center">
     <div class="modalcenter d-flex justify-content-center">
         <div class="d-flex justify-content-center">
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         Cricket facts
         <img src="{{asset('image/lightbulb.png')}}" class='lightbulb'>
     </button>
@@ -231,14 +236,14 @@
 
 <div class="col-12">
 
-<h2  class='buyjersey'>Buy Jersey Online<h2>
+<h2  class='buyjersey text-white bg-dark'>Buy Jersey Online<h2>
  <div class="card-group">
     <div class="card">
       <img src="{{asset('image/indjer.webp')}}" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">INDIAN JERSEY</h5>
         <p class="card-text">Indian Team T-shirts with low price and High quality</p>
-        <p class="card-text"><small class="text-muted"><button type="button" class="btn btn-info" id="eff1" onclick=effect()>BUY NOW</button></small></p>
+        <p class="card-text"><small class="text-muted"><button type="button" class="btn btn-dark " id="eff1" onclick=effect()><strong>BUY NOW</strong></button></small></p>
       </div>
     </div>
     <div class="card">
@@ -246,15 +251,15 @@
       <div class="card-body">
         <h5 class="card-title">AUSTRALIAN JERSEY</h5>
         <p class="card-text">Mighty Aussies Jersey will boost your Confidence</p>
-        <p class="card-text"><small class="text-muted"><button type="button" class="btn btn-info" id="eff2" onclick=effect2()>BUY NOW</button></small></p>
+        <p class="card-text text-white"><small class="text-muted"><button type="button" class="btn btn-dark " id="eff2" onclick=effect2()><strong>BUY NOW</strong></button></small></p>
       </div>
     </div>
     <div class="card">
       <img src="{{asset('image/franchisejersey.jpg')}}" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Franchise Jersey</h5>
+        <h5 class="card-title">FRANCHISE JERSEY</h5>
         <p class="card-text">Divided by franchise and United by Cricket</p>
-        <p class="card-text"><small class="text-muted"><button type="button" class="btn btn-info" id="eff3" onclick=effect3()>BUY NOW</button></small></p>
+        <p class="card-text"><small class="text-muted"><button type="button" class="btn btn-dark" id="eff3" onclick=effect3()><strong>BUY NOW</strong></button></small></p>
       </div>
     </div>
   </div>
@@ -270,20 +275,20 @@
 <hr>
 <div class="col-12">
 {{-- card --}}
-<div  class="d-flex justify-content-center">
-<h2>Trending Buys <img src="{{asset('image/trending.jpg')}}" style="width:120px;"></h2>
+<div  class="d-flex justify-content-center bg-dark">
+<h2 class="text-white">Trending Buys <img src="{{asset('image/trending2.jpg')}}" style="width:80px;height:70px; "></h2>
 </div>
 <div class="d-flex justify-content-center">
 
     <div class="card" style="width: 18rem;">
         <img src="{{asset('image/card.webp')}}" class="card-img-top" alt="...">
         <div class="card-body">
-        <h5 class="card-title" style="background-color: brown">Adidas</h5>
-        <p class="card-text">""This Jersey is highly selling in this week..Go and Buy""" </p>
-        <a href="#" class="btn btn-success" id="eff4" onclick=effect4()>Buy it now!</a>
+        <h5 class="card-title" style="background-color: black;color:whitesmoke">Adidas</h5>
+        <p class="card-text">""This Jersey is highly selling in this week..Go and Buy"" </p>
+        <a href="#" class="btn btn-dark" id="eff4" onclick=effect4()><strong>Buy it now!</strong></a>
     </div>
   </div>
-<
+
 </div>
 
 
@@ -295,7 +300,7 @@
   {{-- footer --}}
   <div class="col-12">
   <div class='footer' >
-    <div class="text-bg-light p-3">
+    <div class="text-bg-dark bg-black p-3">
   <div class="b-example-divider"></div>
 
 <div class="container">
@@ -306,7 +311,7 @@
 
       </a>
       <p class="text-body-light">&copy; 2023</p>
-      <img src="{{asset('image/twitter-instagram.avif')}}" style="width:150px;height:60px;">
+      <img src="{{asset('image/twitter-instagram.avif')}}" style="width:150px;height:60px; ">
     </div>
 
     <div class="col mb-3">
@@ -317,7 +322,7 @@
 
 
       <img src="{{asset('image/donation.png')}}" style="width:100px;height:100px">
-      <h2 style="background-color:grey; color:green;width:100px;">Grow Trees</h2>
+      <h2 style="background-color:white; color:green;width:100px;">Grow Trees</h2>
     </div>
 
     <div class="col mb-3">
